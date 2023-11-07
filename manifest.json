@@ -1,0 +1,34 @@
+{
+    "name": "nurl",
+    "description": "A Neo URL Resolver",
+    "version": "0.2.4",
+    "manifest_version": 3,
+    "permissions": [
+      "alarms",
+      "webRequest",
+      "webNavigation",
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "*://*.neo/"
+    ],
+    "action": {
+      "default_title": "View settings",
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "resolver.js"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+      {
+          "resources": ["error_page.html"],
+          "matches": ["<all_urls>"],
+          "use_dynamic_url": false
+      }
+  ]
+  }
