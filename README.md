@@ -1,5 +1,7 @@
 # ![nurl Icon](https://github.com/EdgeDLT/nurl/blob/main/icons/icon48.png) nurl
 
+current version: v0.2.4
+
 ## Description
 
 nurl is a browser extension which can resolve decentralized `.neo` domains into traditional web domains.
