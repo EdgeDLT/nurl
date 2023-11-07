@@ -41,4 +41,14 @@ function updateStatus(message, isError) {
     }, 5000);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById('rateLink');
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        chrome.tabs.create({url: this.href});
+    });
+});
+
+
+document.getElementById("version").innerHTML += chrome.runtime.getManifest().version;
 document.getElementById("reset").addEventListener("click", deleteAllRules);

@@ -1,12 +1,11 @@
 {
     "name": "nurl",
     "description": "A Neo URL Resolver",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "manifest_version": 3,
     "permissions": [
       "alarms",
       "webRequest",
-      "webNavigation",
       "declarativeNetRequest"
     ],
     "host_permissions": [
