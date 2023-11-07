@@ -10,9 +10,20 @@ nurl is a browser extension which can resolve decentralized `.neo` domains into 
 
 To navigate using a `.neo` domain, simply type the `.neo` domain into your address bar, appending a trailing slash `/` at the end. For instance, entering `status.edge.neo/` will take you to a node status page. Not using the trailing slash may cause your browser to interpret the domain as a search, which will not be redirected. 
 
-Links generally work fine. For example, install the extension then click -> [https://status.edge.neo](https://status.edge.neo).
+The first time visiting a website via the `.neo` domain is usually the slowest as there is no redirect rule in place yet. Rules can be reset by clicking the _Reset rules_ button on the extension.
 
-The domain must have a valid Neo Name Service CNAME record pointing at a traditional web domain. View the NeoNS docs for help setting up records.
+Links generally work fine. Install the extension, then try visit some below:
+
+| Site           | .neo subdomain                                     |
+|----------------|----------------------------------------------------|
+| neonewstoday   | [https://news.explore.neo](https://news.explore.neo) |
+| coz            | [https://coz.explore.neo](https://coz.explore.neo) |
+| nspcc          | [https://nspcc.explore.neo](https://nspcc.explore.neo) |
+| axlabs         | [https://axlabs.explore.neo](https://axlabs.explore.neo) |
+| neo dev portal | [https://dev.explore.neo](https://dev.explore.neo) |
+
+
+> **_NOTE:_** A domain must have a valid Neo Name Service CNAME record pointing at a traditional web domain for resolution to succeed. View the NeoNS docs for help setting up records.
 
 ## Installation
 
